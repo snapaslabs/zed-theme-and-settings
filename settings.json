@@ -1,0 +1,164 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cli_default_open_behavior": "new_window",
+  "lsp_highlight_debounce": 1,
+  "diff_view_style": "split",
+  "lsp_results_location": "picker",
+  "scrollbar": {
+    "selected_text": true
+  },
+  "inlay_hints": {
+    "show_value_hints": true,
+    "show_parameter_hints": true
+  },
+  "indent_guides": {
+    "enabled": true
+  },
+  "inline_code_actions": false,
+  "gutter": {
+    "line_numbers": true,
+    "breakpoints": false,
+    "folds": false,
+    "bookmarks": false,
+    "runnables": false
+  },
+  "git": {
+    "inline_blame": {
+      "location": "status_bar"
+    },
+    "git_gutter": "tracked_files",
+    "enable_diff": true,
+    "enable_status": true
+  },
+  "markdown_preview_code_font_family": ".ZedMono",
+  "markdown_preview_font_family": ".SystemUIFont",
+  "buffer_font_weight": 300.0,
+  "drag_and_drop_selection": {
+    "delay": 100
+  },
+  "hover_popover_hiding_delay": 100,
+  "sticky_scroll": {
+    "enabled": true
+  },
+  "horizontal_scroll_margin": 3.0,
+  "use_smartcase_search": true,
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": true
+    },
+    "blinking": "on",
+    "cursor_shape": "underline",
+    "font_size": 13.0,
+    "font_family": ".ZedMono"
+  },
+  "proxy": "",
+  "code_lens": "off",
+  "colorize_brackets": true,
+  "prettier": {
+    "allowed": true
+  },
+  "agent": {
+    "dock": "right",
+    "sidebar_side": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "preview_tabs": {
+    "enable_preview_from_file_finder": true
+  },
+  "ui_font_family": ".SystemUIFont",
+  "buffer_font_family": "Menlo",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "project_panel": {
+    "dock": "left",
+    "auto_fold_dirs": false
+  },
+  "status_bar": {
+    "experimental.show": true
+  },
+  "tab_bar": {
+    "show": true
+  },
+  "minimap": {
+    "display_in": "all_editors",
+    "show": "always"
+  },
+  "selection_highlight": true,
+  "format_on_save": "on",
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    },
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "acceptEdits"
+      },
+      "type": "registry"
+    }
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Material Icon Theme"
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 15.0,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "VSCode Nicer Dark High Contrast"
+  },
+  "languages": {
+    "Go": {
+      "indent_guides": {
+        "coloring": "fixed",
+        "enabled": true
+      },
+      "colorize_brackets": true,
+      "inlay_hints": {
+        "show_other_hints": false,
+        "show_parameter_hints": false,
+        "show_type_hints": false,
+        "show_value_hints": true,
+        "edit_debounce_ms": 100,
+        "enabled": true
+      }
+    },
+    "Python": {
+      "tab_size": 4,
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "JavaScript": {
+      "tab_size": 2,
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "eslint": {
+      "settings": {
+        "rulesCustomizations": [{ "rule": "react-hooks/*", "severity": "warn" }]
+      }
+    }
+  }
+}
