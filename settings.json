@@ -1,12 +1,7 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "allow_data_collection": "no"
+  },
   "markdown_preview": {
     "font_family": ".SystemUIFont",
     "code_font_family": ".ZedMono"
@@ -57,8 +52,8 @@
     },
     "blinking": "on",
     "cursor_shape": "underline",
-    "font_size": 13.0,
-    "font_family": ".ZedMono"
+    "font_size": 12.0,
+    "font_family": "Menlo"
   },
   "proxy": "",
   "code_lens": "off",
@@ -67,6 +62,12 @@
     "allowed": true
   },
   "agent": {
+    "auto_compact": {
+      "threshold": "80%"
+    },
+    "enable_feedback": false,
+    "use_modifier_to_send": true,
+    "thinking_display": "always_expanded",
     "dock": "right",
     "sidebar_side": "right",
     "favorite_models": [],
@@ -110,7 +111,7 @@
     },
     "claude-acp": {
       "default_config_options": {
-        "mode": "acceptEdits"
+        "mode": "plan"
       },
       "type": "registry"
     }
@@ -130,6 +131,8 @@
   },
   "languages": {
     "Go": {
+      "hard_tabs": true,
+      "formatter": { "language_server": { "name": "gopls" } },
       "indent_guides": {
         "coloring": "fixed",
         "enabled": true
